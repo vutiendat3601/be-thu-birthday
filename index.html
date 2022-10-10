@@ -24,7 +24,7 @@
     <div class="bg-color"></div>
     <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
         <header class="masthead mb-auto">
-            
+
             <!-- <div class="inner">
                 <h3 class="masthead-brand"><img src="./Birthday Cover - Bootstrap Template_files/entro-labs-logo-w.png" alt="logo"></h3>
                 <nav class="nav nav-masthead justify-content-center">
@@ -207,7 +207,7 @@
                 <h4 class="text-warning"> bé Thư </h4>
             </div>
 
-            <p class="lead">Happy sinh nhật .<br> Chúc mừng birthday <br> ahihi</p>
+            <p class="lead">Happy sinh nhật <br> Chúc mừng birthday <br> ahihi</p>
             <!-- <p class="lead">
                 <a href="#" class="btn btn-lg btn-secondary">Learn more</a>
             </p> -->
@@ -217,12 +217,12 @@
         <footer class="mastfoot mt-auto">
             <div class="inner">
                 <!-- <p>Designed by <a href="http://107.178.223.50/Designs/birthday-wishes/#">Entrolabs It Solution Pvt Ltd</a>.</p> -->
-                
-            <audio  autoplay>
-                <source src="./resource/HappyBirthdayToYou-NSync.mp3" type="audio/mp3">
-                <!-- <source src="horse.mp3" type="audio/mpeg"> -->
-                Your browser does not support the audio element.
-            </audio>
+
+                <audio id="music" autoplay controls>
+                    <source src="./resource/HappyBirthdayToYou-NSync.mp3" type="audio/mp3">
+                    <!-- <source src="horse.mp3" type="audio/mpeg"> -->
+                    Your browser does not support the audio element.
+                </audio>
             </div>
 
         </footer>
@@ -235,7 +235,10 @@
     <script src="./resource/popper.min.js.download"></script>
     <script src="./resource/bootstrap.min.js.download"></script>
     <script src="./resource/custom.js.download"></script>
-
+    <script>
+        var x = document.getElementById("music");
+            x.play();
+    </script>
 
 </body>
 
